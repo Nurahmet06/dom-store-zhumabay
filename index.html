@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Store - Lab 5</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Product Store</h1>
+
+        <p>Lab 5 - DOM, Events and Forms</p>
+
+        <h2>Add Product</h2>
+
+        <form id="product-form" novalidate>
+
+            <label for="name">Product Name</label>
+
+            <input type="text" id="name" placeholder="Enter product name">
+
+            <small id="name-error" class="error"></small>
+
+            <label for="price">Price</label>
+
+            <input type="number" id="price" placeholder="Enter price">
+
+            <small id="price-error" class="error"></small>
+
+            <label for="qty">Quantity</label>
+
+            <input type="number" id="qty" placeholder="Enter quantity">
+
+            <small id="qty-error" class="error"></small>
+
+            <button type="submit">Add Product</button>
+
+        </form>
+
+        <h2>Product List</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+
+                    <th>Price</th>
+
+                    <th>Quantity</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="product-list"></tbody>
+
+        </table>
+
+        <h2>Total: <span id="total">0</span> KZT</h2>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
